@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b21yeuplwd31l"]
+
+[ext_resource type="Texture2D" uid="uid://c2bjkierhjl6d" path="res://Assets/trolley.png" id="1_mi635"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
+size = Vector2(77.125, 4.125)
+
+[node name="Platform" type="AnimatableBody2D" unique_id=1295642588]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=712635530]
+position = Vector2(-38.624996, 60.750004)
+scale = Vector2(0.125, 0.10807176)
+texture = ExtResource("1_mi635")
+region_enabled = true
+region_rect = Rect2(0, 0, 614, 1115)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=500388651]
+position = Vector2(-38.5625, 118)
+shape = SubResource("RectangleShape2D_s8bxr")
