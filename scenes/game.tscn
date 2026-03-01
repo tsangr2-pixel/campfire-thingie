@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://dtwv4fbkls8vc"]
 
 [ext_resource type="PackedScene" uid="uid://gljmlejltdyf" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://cjq8qifk10n5i" path="res://wwww.png" id="2_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://dbjrq82ts1dv7" path="res://Assets/industrial.v2.png" id="2_yqjtg"]
+[ext_resource type="Script" uid="uid://ywhyc60egq2f" path="res://scripts/gun.gd" id="3_iywne"]
 [ext_resource type="PackedScene" uid="uid://b21yeuplwd31l" path="res://scenes/platform.tscn" id="3_lnu2h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
@@ -519,6 +521,12 @@ position = Vector2(-118.444885, 64)
 position = Vector2(8.290484e-06, -13)
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
+
+[node name="Gun" type="Sprite2D" parent="player" unique_id=539426365]
+position = Vector2(9.779841, -6)
+scale = Vector2(0.11731134, 0.13157895)
+texture = ExtResource("2_lbhrr")
+script = ExtResource("3_iywne")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1751267]
 position = Vector2(3.259951, 0)
